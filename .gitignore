@@ -1,0 +1,105 @@
+### Ruby ###
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+
+# YARD artifacts
+.yardoc
+_yardoc
+doc/
+
+
+### Rails ###
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+
+# Bundler Configuration
+/.bundle
+/vendor/bundle
+vendor/bundler_gems
+bin/stubs
+
+# Temporary Files
+/log/*
+/tmp/*
+
+# Default SQLite Database
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Miscellaneous
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+.project
+!.keep
+*.swp
+.env
+tags
+
+# RVM Related Stuff
+.rvmrc
+.powrc
+
+# Config Files
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+
+
+### IDEs ###
+
+# RubyMine
+.idea/workspace.xml
+
+
+### Text Editors ###
+
+# SublimeText
+*.sublime-workspace
+
+# TextMate
+*.tmproj
+*.tmproject
+tmtags
+
+
+### OS Related Files
+
+# Linux
+.*
+!.gitignore
+!.git*
+*~
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
