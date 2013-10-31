@@ -32,6 +32,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do
+  # Use haml as the default template engine
+  gem 'haml-rails', '~> 0.4'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
