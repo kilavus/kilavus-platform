@@ -28,7 +28,6 @@ group :development do
 end
 
 group :test do
-  gem 'pg'
   gem 'database_cleaner', '~> 1.2.0'
   gem 'email_spec', '~> 1.5.0'
   gem 'cucumber-rails', '~> 1.4.0', :require => false
