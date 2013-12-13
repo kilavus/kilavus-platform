@@ -103,3 +103,6 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
+# Ignore application configuration
+/config/application.yml
+
