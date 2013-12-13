@@ -1,4 +1,4 @@
-# kilavus-platform [![Build Status](https://travis-ci.org/kilavus/kilavus-platform.png)](https://travis-ci.org/kilavus/kilavus-platform) [![Code Climate](https://codeclimate.com/github/kilavus/kilavus-platform.png)](https://codeclimate.com/github/kilavus/kilavus-platform) [![Dependency Status](https://gemnasium.com/kilavus/kilavus-platform.png)](https://gemnasium.com/kilavus/kilavus-platform)
+# kilavus-platform [![Build Status](https://travis-ci.org/kilavus/kilavus-platform.png)](https://travis-ci.org/kilavus/kilavus-platform) [![Code Climate](https://codeclimate.com/github/kilavus/kilavus-platform.png)](https://codeclimate.com/github/kilavus/kilavus-platform) [![Dependency Status](https://gemnasium.com/kilavus/kilavus-platform.png)](https://gemnasium.com/kilavus/kilavus-platform) [![Coverage Status](https://coveralls.io/repos/kilavus/kilavus-platform/badge.png)](https://coveralls.io/r/kilavus/kilavus-platform)
 
 _Description: What does this project do and who does it serve?_
 

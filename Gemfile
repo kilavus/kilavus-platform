@@ -33,6 +33,7 @@ group :test do
   gem 'cucumber-rails', '~> 1.4.0', :require => false
   gem 'launchy', '~> 2.4.2'
   gem 'capybara', '~> 2.2.0'
+  gem 'coveralls', require: false
 end
 
 group :development, :test do
