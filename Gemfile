@@ -4,7 +4,7 @@ gem 'rails', '4.0.2'
 gem 'sqlite3'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder', '~> 2.0.1'
 gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'devise', '~> 3.2.2'
 gem 'cancan', '~> 1.6.10'
@@ -16,14 +16,13 @@ gem 'figaro', '~> 0.7.0'
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
   gem 'coffee-rails', '~> 4.0.0'
-  gem 'uglifier', '>= 1.3.0'
+  gem 'uglifier', '>= 2.4.0'
 end
 
 group :development do
-  gem 'sqlite3'
-  gem 'haml-rails', '~> 0.4'
+  gem 'haml-rails', '~> 0.5.2'
   gem 'quiet_assets', '~> 1.0.2'
-  gem 'better_errors', '~> 1.0.1'
+  gem 'better_errors', '~> 1.1.0'
   gem 'binding_of_caller', '~> 0.7.2'
 end
 
@@ -37,7 +36,7 @@ group :test do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.14.0'
+  gem 'rspec-rails', '~> 2.14.1'
   gem 'factory_girl_rails', '~> 4.3.0'
 end
 
