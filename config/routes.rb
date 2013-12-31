@@ -1,4 +1,6 @@
 KilavusPlatform::Application.routes.draw do
+  resources :videos
+
   resources :courses
 
   devise_for :users

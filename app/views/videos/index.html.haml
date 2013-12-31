@@ -1,0 +1,27 @@
+%h1 Listing videos
+
+%table
+  %tr
+    %th Vimeoid
+    %th Title
+    %th Description
+    %th Duration
+    %th Visualization
+    %th
+    %th
+    %th
+
+  - @videos.each do |video|
+    %tr
+      %td= video.vimeoid
+      %td= video.title
+      %td= video.description
+      %td= video.duration
+      %td= video.visualization
+      %td= link_to 'Show', video
+      %td= link_to 'Edit', edit_video_path(video)
+      %td= link_to 'Destroy', video, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Video', new_video_path
