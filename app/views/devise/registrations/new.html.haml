@@ -1,10 +1,46 @@
-%h2 Sign up
-= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
-  = f.error_notification
-  .form-inputs
-    = f.input :email, :required => true, :autofocus => true
-    = f.input :password, :required => true
-    = f.input :password_confirmation, :required => true
-  .form-actions
-    = f.button :submit, "Sign up"
-= render "devise/shared/links"
+= render "partials/header"
+.well
+  .ribbon
+    .ribbon-stitches-top
+    %strong.ribbon-content
+      %h1 Register
+    .ribbon-stitches-bottom
+  %hr/
+  .row-fluid
+    .span4
+      %img{src: "http://placehold.it/250x500&text=Kewl Image"}
+    .span8
+      = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+        .row-fluid
+          = f.error_notification
+          .span3
+            %b
+              %i.fa.fa-envelope
+              Email:
+          .span9
+            = f.input :email, :required => true, :autofocus => true, :class => "input-xlarge", :label => false
+          %p.help-block We heard you have an awesome email! Why don't you let us know?
+        %hr
+        .row-fluid
+          .span3
+            %b
+              %i.fa.fa-lock
+              Password:
+          .span9
+            = f.input :password, :required => true, :class => "input-xlarge", :label => false
+          %p.help-block Don't forget your password!
+        %hr
+        .row-fluid
+          .span3
+            %b
+              %i.fa.fa-lock
+              Password confirmation:
+          .span9
+            = f.input :password_confirmation, :required => true, :class => "input-xlarge", :label => false
+          %p.help-block Please enter your password again!
+        %hr
+        .row-fluid
+          .span12.form-actions
+            = f.button :submit, "Register away!", :class => "btn btn-primary btn-block"
+      = render "devise/shared/links"
+= render "partials/footer"

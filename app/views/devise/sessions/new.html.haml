@@ -17,7 +17,7 @@
               %i.fa.fa-envelope
               Email:
           .span9
-            = f.input :email, :required => false, :autofocus => true, :class => "input-xlarge"
+            = f.input :email, :required => false, :autofocus => true, :class => "input-xlarge", :label => false
           %p.help-block Type in your awesome email
         %hr
         .row-fluid
@@ -26,7 +26,7 @@
               %i.fa.fa-lock
                 Password:
           .span9
-            = f.input :password, :required => false, :class => "input-xlarge"
+            = f.input :password, :required => false, :class => "input-xlarge", :label => false
           %p.help-block Hide your password well!
           %hr/
           = f.input :remember_me, :as => :boolean if devise_mapping.rememberable?
@@ -37,6 +37,6 @@
             %img{src: "http://placehold.it/300x80&text=Twitter Login"}
         .row-fluid
           .span12.form-actions
-            = f.button :submit, "Login", :class => "btn btn-primary btn-block"
+            = f.button :submit, "Login", :class => "btn btn-primary btn-block", :label => false
       = render "devise/shared/links"
 = render "partials/footer"
