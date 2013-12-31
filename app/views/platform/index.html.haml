@@ -1,2 +1,38 @@
-%h1 Platform#index
-%p Find me in app/views/platform/index.html.haml
+= render "partials/header"
+/ Jumbotron
+.jumbotron.well
+  #main-top.row-fluid
+    %h1 Free Courses
+    %p.lead We provide a free and accessible education for everyone. Our platform is free and will always be free.
+  .ribbon
+    .ribbon-stitches-top
+    %strong.ribbon-content
+      %h1 Watch hundreds of courses now
+    .ribbon-stitches-bottom
+  .row-fluid
+    #main-list.span4
+      %a{href: "#"}
+        %p
+          %img.img-polaroid{src: "http://placehold.it/250x100&text=Course 1"}/
+        %h2 Super Dope Videos
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quis est eget iaculis.
+    .span4
+      %a{href: "#"}
+        %p
+          %img.img-polaroid{src: "http://placehold.it/250x100&text=Course 2"}/
+        %h2 High Tech Monkeys
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quis est eget iaculis.
+    .span4
+      %a{href: "#"}
+        %p
+          %img.img-polaroid{src: "http://placehold.it/250x100&text=Course 3"}/
+        %h2 Über Kewl Servers
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quis est eget iaculis.
+  %hr/
+  .row-fluid
+    .span12
+      .span4
+      .span4
+        %a.btn.btn-large.btn-block.btn-success{href: "#"} Start learning today
+      .span4
+= render "partials/footer"
