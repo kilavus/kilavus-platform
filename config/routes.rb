@@ -1,7 +1,8 @@
 KilavusPlatform::Application.routes.draw do
-  resources :videos
 
-  resources :courses
+  resources :courses do
+    resources :videos
+  end
 
   devise_for :users
   get "platform/index"
