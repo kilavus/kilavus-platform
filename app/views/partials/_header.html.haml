@@ -3,9 +3,13 @@
     .span6
     .span6
       %p.pull-right.muted
-        %a{href:"#"}>Sign Up
-        |
-        %a{href:"#"}>Sign In
-        |
-        %a{href:"#"}>Profile
+        - if user_signed_in?
+          = link_to('Profile', edit_user_registration_path)
+          |
+          = link_to('Logout', destroy_user_session_path, :method => :delete)
+        - else
+          = link_to('Sign Up', new_user_registration_path)
+          |
+          = link_to('Sign In', new_user_session_path)
+
   = render "partials/navbar"
